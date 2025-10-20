@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Census</string>
+    <string name="ErrorMsgAdd">Error for register the data</string>
+    <string name="ErrorMsgUpdate">Error for update the data</string>
+    <string name="ErrorMsgRemove">Error for remove the data</string>
+    <string name="ErrorMsgGetAll">Error for get all data</string>
+    <string name="ErrorMsgGetById">Error for get especific data</string>
+</resources>
