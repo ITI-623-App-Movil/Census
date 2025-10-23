@@ -2,7 +2,7 @@ package Entity
 
 class Province {
     private var name: String = ""
-    private lateinit var states: MutableList<String>()
+    private lateinit var states: MutableList<String>
 
     constructor()
 
