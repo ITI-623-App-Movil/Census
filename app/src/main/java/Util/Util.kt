@@ -6,8 +6,8 @@ import java.util.Objects
 
 class Util {
     companion object {
-        fun openActivity(context: Context, objClass: Class<>){
-            val intent = Intent(context, cls = objClass)
+        fun openActivity(context: Context, objClass: Class<*>){
+            val intent = Intent(context,objClass)
             context.startActivity(intent)
         }
     }

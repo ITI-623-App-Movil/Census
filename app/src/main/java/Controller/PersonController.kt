@@ -34,7 +34,7 @@ class PersonController {
         try {
             return dataManager.getAll()
         } catch (e: Exception) {
-            throw Exception(context.getString(R.string.ErrorMsgGetAll))
+            throw Exception(context.getString(R.string.ErrorMsgGetAll)
         }
     }
 
@@ -61,6 +61,17 @@ class PersonController {
             return result
         } catch (e: Exception) {
             throw Exception(context.getString(R.string.ErrorMsgGetById))
+        }
+    }
+
+    fun removePerson(id: String) {
+        try {
+            val result = dataManager.getById(id)
+            if (result == null) {
+                throw Exception(context.getString(R.string.MsgDataNotFound))
+            }
+        } catch (e: Exception) {
+            throw Exception(context.getString(R.string.ErrorMsgRemove))
         }
     }
 }
