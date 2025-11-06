@@ -29,6 +29,12 @@
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/btnSearchId_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_search" />
         </TableRow>
 
         <TableRow
@@ -132,12 +138,23 @@
                 android:layout_height="match_parent"
                 android:text="@string/TextBirthday" />
 
-            <EditText
-                android:id="@+id/txtBirthday_person"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/lblBirthdate_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSelecteddate_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+            </TableRow>
+
         </TableRow>
 
         <TableRow
@@ -214,20 +231,5 @@
                 android:inputType="textMultiLine" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btnSave_person"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btnPersonText_main" />
-        </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
